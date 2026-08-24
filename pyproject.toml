@@ -1,0 +1,33 @@
+[project]
+name = "corpus"
+version = "0.1.0"
+description = "Local RAG over a longitudinal newsletter corpus"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32",
+    "feedparser>=6.0",
+    "beautifulsoup4>=4.12",
+    "html2text>=2024.2.26",
+    "pyyaml>=6.0",
+    "sentence-transformers>=3.0",
+    "sqlite-vec==0.1.9",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+corpus = "corpus.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: tests that load a real model (excluded by default)"]
+addopts = "-m 'not slow'"

@@ -1,0 +1,51 @@
+{
+  "mode": "dense",
+  "k": 10,
+  "index_version": "71c818764b3a",
+  "generated_at": "2026-08-24T15:42:50.443221+00:00",
+  "judged_entries": 90,
+  "scored_queries": 8,
+  "summary": {
+    "overall": {
+      "n": 8,
+      "recall_at_k": 0.6337121212121212,
+      "mrr": 0.6875,
+      "recall_ci95": [
+        0.41694128787878787,
+        0.8175189393939388
+      ]
+    },
+    "by_tag": {
+      "entity": {
+        "n": 7,
+        "recall_at_k": 0.7242424242424242,
+        "mrr": 0.7857142857142857,
+        "recall_ci95": [
+          0.6,
+          0.8766233766233766
+        ]
+      },
+      "temporal": {
+        "n": 0,
+        "recall_at_k": null,
+        "mrr": null,
+        "recall_ci95": null
+      },
+      "paraphrase": {
+        "n": 1,
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "recall_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "multi-source": {
+        "n": 0,
+        "recall_at_k": null,
+        "mrr": null,
+        "recall_ci95": null
+      }
+    }
+  }
+}

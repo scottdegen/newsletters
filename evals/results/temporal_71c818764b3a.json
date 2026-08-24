@@ -1,0 +1,51 @@
+{
+  "mode": "temporal",
+  "k": 10,
+  "index_version": "71c818764b3a",
+  "generated_at": "2026-08-24T15:44:14.986873+00:00",
+  "judged_entries": 90,
+  "scored_queries": 8,
+  "summary": {
+    "overall": {
+      "n": 8,
+      "recall_at_k": 0.35473484848484854,
+      "mrr": 0.32291666666666663,
+      "recall_ci95": [
+        0.12485795454545455,
+        0.6151893939393938
+      ]
+    },
+    "by_tag": {
+      "paraphrase": {
+        "n": 1,
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "recall_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "entity": {
+        "n": 7,
+        "recall_at_k": 0.4054112554112555,
+        "mrr": 0.369047619047619,
+        "recall_ci95": [
+          0.15464285714285714,
+          0.67987012987013
+        ]
+      },
+      "multi-source": {
+        "n": 0,
+        "recall_at_k": null,
+        "mrr": null,
+        "recall_ci95": null
+      },
+      "temporal": {
+        "n": 0,
+        "recall_at_k": null,
+        "mrr": null,
+        "recall_ci95": null
+      }
+    }
+  }
+}

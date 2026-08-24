@@ -1,0 +1,138 @@
+# evals/queries.yaml — Phase 2.5 ground-truth query set.
+#
+# Written blind, before running any of them or looking at search results, per
+# PLAN.md's methodology: ground truth must never be constructed from search
+# output, or the eval defines "relevant" as "what the default mode returns"
+# and guarantees that mode wins by construction.
+#
+# Tags:
+#   entity       — proper-noun-heavy; expected to favor sparse/BM25 (Phase 3)
+#   paraphrase   — conceptual rephrasing, no exact source wording; expected
+#                  to favor dense
+#   temporal     — evolution/change over time; the project's longitudinal thesis
+#   multi-source — synthesis across differing outlets/perspectives
+
+queries:
+  - id: q01
+    tag: entity
+    text: "What has Marco Rubio said about America's war against Iran?"
+  - id: q02
+    tag: entity
+    text: "What were the results of JD Vance's Iran negotiations?"
+  - id: q03
+    tag: entity
+    text: "What did the Supreme Court rule on the Alien Tort Statute?"
+  - id: q04
+    tag: entity
+    text: "How did the fighting between Israel and Hezbollah begin?"
+  - id: q05
+    tag: entity
+    text: "Since the beginning of the Iran war, what discussions between US-Turkiye/Turkey have taken place?"
+  - id: q06
+    tag: entity
+    text: "What did the Strait of Hormuz first close in 2026?"
+  - id: q07
+    tag: entity
+    text: "What is Operation Southern Spear?"
+  - id: q08
+    tag: entity
+    text: "What has Xi Jinping said about Taiwan this year?"
+  - id: q09
+    tag: entity
+    text: "What has NATO Secretary General Mark Rutte said about European defense spending?"
+  - id: q10
+    tag: entity
+    text: "When did Israel establish its buffer zone in Lebanon?"
+
+  - id: q11
+    tag: paraphrase
+    text: "What are the borders of Israel's buffer zone in Southern Lebanon?"
+  - id: q12
+    tag: paraphrase
+    text: "What are the risks of relying on artificial intelligence in nuclear command systems?"
+  - id: q13
+    tag: paraphrase
+    text: "How has American public opinion shifted on the war with Iran?"
+  - id: q14
+    tag: paraphrase
+    text: "What arguments are being made for and against changing birthright citizenship policy?"
+  - id: q15
+    tag: paraphrase
+    text: "How is the U.S. balancing its relationship with both Israel and Gulf Arab states?"
+  - id: q16
+    tag: paraphrase
+    text: "What's driving concerns about a possible economic downturn originating in China?"
+  - id: q17
+    tag: paraphrase
+    text: "How are courts pushing back against executive branch overreach?"
+  - id: q18
+    tag: paraphrase
+    text: "What's the outlook for a ceasefire or negotiated settlement in Ukraine?"
+  - id: q19
+    tag: paraphrase
+    text: "How is Congress attempting to address corruption within the Trump family's business dealings?"
+  - id: q20
+    tag: paraphrase
+    text: "Why are some analysts skeptical that prediction markets accurately reflect election outcomes?"
+
+  - id: q21
+    tag: temporal
+    text: "How has coverage of the US's constrains in conducting the Iran war evolved from the initial strikes to now?"
+  - id: q22
+    tag: temporal
+    text: "Following Ukraine's stike on Iranian shipping, how did Iran respond?"
+  - id: q23
+    tag: temporal
+    text: "How has public approval of Donald Trump trended since the start of the year?"
+  - id: q24
+    tag: temporal
+    text: "How has Iran's attitude or openness to negotiations with the US evolved since the war began?"
+  - id: q25
+    tag: temporal
+    text: "How has U.S. military posture in the Middle East shifted since the Iran conflict began?"
+  - id: q26
+    tag: temporal
+    text: "How has the legal strategy of Trump administration critics evolved across multiple court cases?"
+  - id: q27
+    tag: temporal
+    text: "What is the history of Alien Tort Statute litigation leading up to the Supreme Court's recent ruling?"
+  - id: q28
+    tag: temporal
+    text: "How has Russia's approach to the war changed as it enters its fifth year?"
+  - id: q29
+    tag: temporal
+    text: "How has the AI policy debate shifted from a state-level patchwork toward federal action?"
+  - id: q30
+    tag: temporal
+    text: "Has the US position on Taiwain defense changed at all this year?"
+
+  - id: q31
+    tag: multi-source
+    text: "What are the legal and national security implications of Trump administration immigration enforcement actions?"
+  - id: q32
+    tag: multi-source
+    text: "How are experts from different fields assessing the risk of AI in military decision-making?"
+  - id: q33
+    tag: multi-source
+    text: "What perspectives exist on why peace deals between the United States and Iran have failed?"
+  - id: q34
+    tag: multi-source
+    text: "How do commentators disagree about the effectiveness of sanctions as a foreign policy tool?"
+  - id: q35
+    tag: multi-source
+    text: "What are the competing views on how Congress should oversee war powers during the Iran conflict?"
+  - id: q36
+    tag: multi-source
+    text: "How are national security and legal scholars evaluating the administration's use of military force domestically?"
+  - id: q37
+    tag: multi-source
+    text: "What tensions exist between free trade and national security in tariff policy debates?"
+  - id: q38
+    tag: multi-source
+    text: "How do different commentators frame the humanitarian situation in Sudan or Syria?"
+  - id: q39
+    tag: multi-source
+    text: "What tensions exist between prediction markets, polling, and forecasting models in covering the Iran war?"
+  - id: q40
+    tag: multi-source
+    text: "How are analysts across security and legal publications evaluating the Board of Peace's role in Gaza?"

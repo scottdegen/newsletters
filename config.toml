@@ -1,0 +1,27 @@
+[paths]
+raw_dir = "corpus/raw"
+db_path = "corpus/corpus.db"
+
+[fetch]
+user_agent = "newsletter-corpus-bot/0.1 (+contact: your-email@example.com)"
+rate_limit_per_sec = 1.0
+timeout_seconds = 10.0
+substack_archive_page_size = 12
+
+[chunk]
+target_tokens = 512
+overlap_ratio = 0.15
+
+[embedding]
+model_name = "google/embeddinggemma-300m"
+dim = 256
+batch_size = 32
+
+[retrieval]
+# Post-retrieval multiplier only (CLAUDE.md invariant 2 — never baked into
+# embedding/index). distance *= (1 + recency_decay_per_day * age_in_days).
+recency_decay_per_day = 0.001
+
+[reranking]
+# Mode 4 (rerank). Not gated on HF, no auth needed.
+model_name = "cross-encoder/ms-marco-MiniLM-L-6-v2"

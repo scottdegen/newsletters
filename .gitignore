@@ -1,0 +1,21 @@
+credentials/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+corpus/raw/
+corpus/corpus.db
+corpus/corpus.db.bak*
+
+# Private: reveals which newsletters/publications are actually followed.
+# Copy the .example.yaml versions and fill in your own feeds/senders.
+sources.yaml
+newsletter_senders.yaml
+
+# Real scraped newsletter HTML — same reason as above. Fixture-dependent
+# tests skip gracefully (see tests/test_parse.py) when this is absent.
+tests/fixtures/
+
+# Pooled eval judgments name the exact source + article URL per row.
+evals/judgments.yaml
+evals/judgments_v1_blind_guesses.yaml

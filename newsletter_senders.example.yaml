@@ -1,0 +1,20 @@
+# newsletter_senders.yaml — Phase 4 (Gmail ingestion) sender allowlist
+#
+# Copy this file to newsletter_senders.yaml (gitignored — see README) and
+# fill in your own senders. Not yet read by any code (Phase 4 hasn't
+# started — see PLAN.md); this is a placeholder for the sender-matching
+# config that phase will need.
+#
+# `id` is the slug stored as the "source" value in the DB — keep it short
+# and stable, and matching the corresponding id in sources.yaml.
+
+senders:
+  - id: example-source-one
+    from_address: newsletter@example-source-one.com
+    display_name: "Example Source One"
+    active: true
+
+  - id: example-substack
+    from_address: author+list@substack.com
+    display_name: "Example Substack"
+    active: true

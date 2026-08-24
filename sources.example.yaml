@@ -1,0 +1,23 @@
+# sources.yaml — Phase 1 backfill sources (RSS/Substack archives)
+#
+# Copy this file to sources.yaml (gitignored — see README) and fill in your
+# own feeds. Real sources aren't committed here since the point of the
+# corpus is to reflect one person's actual reading list.
+#
+# platform values:
+#   substack       — has /api/v1/archive?sort=new&offset=N&limit=12 for deep history
+#   wordpress      — standard WP feed, recent items only (no deep-history endpoint)
+#   custom-rss     — non-WP RSS, recent items only
+
+sources:
+  - id: example-source-one
+    name: "Example Source One"
+    feed_url: https://example-source-one.com/feed/
+    home_url: https://example-source-one.com
+    platform: wordpress
+
+  - id: example-substack
+    name: "Example Substack"
+    feed_url: https://example.substack.com/feed
+    home_url: https://example.substack.com
+    platform: substack
